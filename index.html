@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event RSVP and Guest List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+  <!-- Header Section -->
+  <header class="flex justify-between items-center p-4 bg-purple-800 text-white">
+    <div class="flex items-center">
+      <!-- Placeholder for logo image -->
+      <img src="/img/iStock-1327689563.jpg" alt="Event Logo" class="mr-2" style="width: 100px; height: auto; border-radius: 8px;">
+    </div>
+    <div>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">Sign up</button>
+      <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Login</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="flex flex-wrap">
+    <!-- RSVP Section -->
+    <div class="w-full md:w-1/2 p-4">
+      <div class="bg-teal-300 p-8 rounded-lg shadow-md">
+        <h2 class="font-bold text-xl mb-4">RSVP Here</h2>
+        <p class="mb-8">Let us know if you can make it</p>
+        <form>
+          <label for="name" class="block mb-2">Name</label>
+          <input type="text" id="name" placeholder="Your name" class="mb-4 p-2 w-full rounded border-2 border-gray-200">
+          
+          <label for="attendance" class="block mb-2">Can you attend?</label>
+          <select id="attendance" class="mb-4 p-2 w-full rounded border-2 border-gray-200">
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="maybe">Maybe</option>
+          </select>
+          
+          <label for="comments" class="block mb-2">Comments</label>
+          <textarea id="comments" placeholder="Your comments" class="mb-4 p-2 w-full rounded border-2 border-gray-200"></textarea>
+          
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Please log in</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Guest List Section -->
+    <div class="w-full md:w-1/2 p-4">
+      <div class="bg-green-300 p-8 rounded-lg shadow-md">
+        <h2 class="font-bold text-xl mb-4">Guest list</h2>
+        <p class="mb-8">Currently <strong>4 guests</strong> are expected</p>
+        <ul>
+          <!-- Repeated guest items -->
+          <li class="flex items-center justify-between mb-2">
+            <span>Sept 21, 2022 9:56 am</span>
+            <span>Looking forward to it</span>
+            <span class="text-green-600"><i class="fas fa-check"></i></span>
+          </li>
+          <li class="flex items-center justify-between mb-2">
+            <span>Sept 19, 2022 7:55 am</span>
+            <span>Hello</span>
+            <span class="text-red-600"><i class="fas fa-times"></i></span>
+          </li>
+          <li class="flex items-center justify-between mb-2">
+            <span>Sept 16, 2022 8:49 pm</span>
+            <span>Sorry! Maybe next...</span>
+            <span class="text-red-600"><i class="fas fa-times"></i></span>
+          </li>
+          <li class="flex items-center justify-between">
+            <span>Sept 16, 2022 8:46 pm</span>
+            <span>No</span>
+            <span class="text-red-600"><i class="fas fa-times"></i></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
