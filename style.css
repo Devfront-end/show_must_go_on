@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Custom styles for navigation buttons */
+  #signupBtn, #loginBtn {
+    background-color: #011aff;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+  
+  #signupBtn:hover, #loginBtn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Base styles for popup */
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0; /* This will be dynamically adjusted by JavaScript */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    align-items: flex-start; /* Align to the top */
+    justify-content: center;
+  }
+  
+  .popup.active {
+    display: flex;
+    align-items: flex-start; /* Ensure vertical alignment remains at the start */
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    border-radius: 14px;
+    margin: 0 auto; /* Corrected from 'O auto' to '0 auto' */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Good for medium to large screens */
+    max-width: 400px; /* Maximum width */
+  }
+  
+  /* Responsive adjustments for very small screens */
+  @media (max-width: 600px) {
+    .popup-content {
+      width: 75%; /* Increase width for very small devices */
+      padding: 10px; /* Adjust padding for smaller devices */
+    }
+  }
+  
+  /* Responsive adjustments for large screens */
+  @media (min-width: 1024px) {
+    .popup-content {
+      width: 30%; /* Decrease width for larger devices */
+    }
+  }
+  
+  /* Close button positioning remains the same */
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
