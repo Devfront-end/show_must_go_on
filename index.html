@@ -12,15 +12,13 @@
 
 <!-- Navigation/Header Section -->
 <header class="flex justify-between items-center p-4 bg-purple-600 text-white">
-  <img src="/img/iStock-1318469599.jpg" alt="Logo" class="h-8">
-  <!-- User Info & Logout for logged-in state -->
+  <img src="/img/iStock-1327689563.jpg" alt="Logo" class="h-8">
   <div id="userPanel" class="hidden">
-    <span id="userEmail" class="mr-4"></span> <!-- Placeholder for the user's email -->
+    <span id="userEmail" class="mr-4"></span>
     <button id="logoutBtn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
       Log Out
     </button>
   </div>
-  <!-- Sign Up & Login for logged-out state -->
   <nav id="authButtons" class="flex">
     <button id="signupBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-l mr-2">
       Sign Up
@@ -46,7 +44,7 @@
         By signing up, I agree to the Privacy Policy...
       </p>
       <p class="text-center mt-4">
-        Already have an account? <a href="#" class="text-blue-500">Login</a>
+        Already have an account? <a href="#" id="switchToLogin" class="text-blue-500">Login</a>
       </p>
     </form>
   </div>
@@ -65,11 +63,11 @@
           <input type="checkbox" class="form-checkbox" checked>
           <span class="ml-2">Remember me</span>
         </label>
-        <a href="#" class="text-blue-500">Forgot password?</a>
+        <a href="reset-password.html" class="text-blue-500">Forgot password?</a>
       </div>
       <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 w-full">Log In</button>
       <p class="text-center mt-4">
-        Don't have an account? <a href="#" class="text-blue-500">Sign up</a>
+        Don't have an account? <a href="#" id="switchToSignup" class="text-blue-500">Sign up</a>
       </p>
     </form>
   </div>
@@ -97,7 +95,7 @@
         <label for="comments" class="block mb-2">Comments</label>
         <textarea id="comments" placeholder="Your comments" class="mb-4 p-2 w-full rounded border-2 border-gray-200"></textarea>
 
-        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Please log in</button>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Submit</button>
       </form>
     </div>
   </div>
@@ -133,7 +131,6 @@
     </div>
   </div>
 </div>
-<!-- ... -->
 
 <script src="script.js"></script>
 </body>
